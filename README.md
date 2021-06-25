@@ -12,7 +12,7 @@ This is The Pizza Plaza website where any customer can be able to order and get 
 
 - Go to your terminal
 - Create a new folder called (Pizza Plaza)
-- Navigate to the folder and run the command : https://github.com/MesutEmpire/PizzaPlaza.git
+- Navigate to the folder and run the command : git clone https://github.com/MesutEmpire/PizzaPlaza.git
 - Open on preferred code editor
 
 ## Known Bugs
