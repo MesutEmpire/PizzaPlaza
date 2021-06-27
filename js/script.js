@@ -1,26 +1,50 @@
 const products = [
   {
-    image: "images/pizza_bacon-cheddar-ham.jpg",
+    image: "images/BBQ_steak.png",
     duration: "100-110 min",
-    name: "Pizza Bacon Cheddar Ham",
+    name: "BBQ Steak",
     price: "Min Ksh 570",
   },
   {
-    image: "images/pizza_bacon-cheeseburger.jpg",
+    image: "images/Chicken_bali.png",
     duration: "60-70min",
-    name: "Pizza Bacon Cheese Burger",
+    name: "Chicken Bali",
     price: "Min Ksh 620",
   },
   {
-    image: "images/pizza_buffalo_chicken.jpg",
+    image: "images/Chicken_supreme.png",
     duration: "90-100min",
-    name: "PPizza Buffalo Chicken",
+    name: "Chicken Supreme",
     price: "Min Ksh 500",
   },
   {
-    image: "images/pizza_chicken_fajita.jpg",
+    image: "images/Chicken_Tikka.png",
     duration: "80-100min",
-    name: "PPizza Chicken Fajita",
+    name: "Chicken Tikka",
+    price: "Min Ksh 490",
+  },
+  {
+    image: "images/Hawaiian.png",
+    duration: "90-100min",
+    name: "Hawaiian",
+    price: "Min Ksh 500",
+  },
+  {
+    image: "images/Pepperoni_chicken.png",
+    duration: "80-100min",
+    name: "Pepperoni Passion",
+    price: "Min Ksh 490",
+  },
+  {
+    image: "images/Periperi_chicken.png",
+    duration: "80-100min",
+    name: "Peri peri Chicken",
+    price: "Min Ksh 490",
+  },
+  {
+    image: "images/Veggie_extravaganza.png",
+    duration: "80-100min",
+    name: "Veggie Extravaganza",
     price: "Min Ksh 490",
   },
 ];
@@ -29,7 +53,7 @@ let items = "";
 
 for (let i = 0; i < products.length; i++) {
   items +=
-    '<div class="col" data-toggle="modal"  data-target="#myModal"><div class="card h-50"><div class="pizza-images"><img src=' +
+    '<div class="col col-md-3" data-toggle="modal"  data-target="#myModal"><div class="card mb-5"><div class="pizza-images"><img src=' +
     products[i].image +
     ' class="card-img-top" alt="..."/> <div class="bottom-right-text">' +
     products[i].duration +
@@ -41,3 +65,10 @@ for (let i = 0; i < products.length; i++) {
 }
 
 document.getElementById("prod").innerHTML = items;
+
+$("#delivery").click(function () {
+  $(".destination").show();
+});
+$("#pickUp").click(function () {
+  $(".destination").hide();
+});

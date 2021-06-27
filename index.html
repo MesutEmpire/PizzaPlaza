@@ -20,61 +20,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <div
-      style="
-        background-image: url('images/53110049.gif');
-        background-size: cover;
-      "
-      class="vh-100 d-flex align-items-center justify-content-center"
-    >
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="text-center p-5">
-              <!-- <img src="" alt="logo" id="logo" /> -->
-              <div class="m-5 text-white">
-                <h1 class="p-3">WELCOME</h1>
-                <h1 class="p-1 pb-3">PIZZA PLAZA</h1>
-
-                <p class="pb-5">
-                  Enjoy your favourite pizza with a twisted crust, delicately
-                  brushed with flavorful garlic butter, sprinkled with Parmecian
-                  and stuffed with your favourite melted morrarella cheese.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center p-5">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Delivery always in time</h3>
-            <p>
-              Order pizza online for fast pizza delivery or drop by for
-              carryout.We are always here to share your big events
-            </p>
-            <p>
-              Every day,<br />
-              from 9 am to 10 pm
-            </p>
-          </div>
-          <div class="col-md-4">
-            <h3>Pizza Weekend Offer</h3>
-            <p>Visit for Street Pizza Weekend Special</p>
-          </div>
-          <div class="col-md-4">
-            <h3>Feel Good</h3>
-            <h3>With Natural Food</h3>
-            <p>
-              At Pizza Plaza we work hard to ensure our delicious pizza consists
-              of healthy ingredients.
-            </p>
-          </div>
-        </div>
+  <body class="container-fluid">
+    <div class="row">
+      <div class="col-md-9">
         <div class="row">
           <div class="col-md-12">
             <h2>Our Pizza</h2>
@@ -88,62 +36,7 @@
             <h3>Specialty Pizzas</h3>
           </div>
         </div>
-        <!-- <div class="container-fluid">
-          <div class="m-5 p-5">
-            <div class="row p-2">
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_bacon-cheddar-ham.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_bacon-cheeseburger.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_buffalo_chicken.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_chicken_fajita.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_everything-monster.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/pizza_taco.jpg"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/Pizza Message Notification Food Instagram Post.png"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-              <div class="col-md-3">
-                <img
-                  src="images/Pizza Message Notification Food Instagram Post.png"
-                  style="width: 300px; height: 300px"
-                />
-              </div>
-            </div>
-          </div>
-        </div> -->
+
         <div id="prod" class="row row-cols-1 row-cols-md-3 g-4"></div>
 
         <div class="container-fluid">
@@ -165,13 +58,195 @@
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header">
+                <h4 class="modal-title mr-5">BBQ Steak</h4>
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
-                <h4 class="modal-title">Modal Header</h4>
               </div>
               <div class="modal-body">
-                <p>Some text in the modal.</p>
+                <form>
+                  <h4 class="m-3">CHOOSE ONE OF THE OPTIONS BELOW</h4>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaSize"
+                      id="size1"
+                    />
+                    <label class="form-check-label pl-5" for="size1">
+                      Small
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaSize"
+                      id="size2"
+                    />
+                    <label class="form-check-label pl-5" for="size2">
+                      Medium
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaSize"
+                      id="size3"
+                    />
+                    <label class="form-check-label pl-5" for="size3">
+                      Large
+                    </label>
+                  </div>
+                  <h5 class="m-3">YOUR EXTRAS</h5>
+                  <h4 class="m-3">WHAT KIND OF CRUST WOULD YOU LIKE?</h4>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaCrust"
+                      id="crust1"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Crispy
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaCrust"
+                      id="crust2"
+                    />
+                    <label class="form-check-label pl-5" for="crust2">
+                      Stuffed
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="pizzaCrust"
+                      id="crust3"
+                    />
+                    <label class="form-check-label pl-5" for="crust3">
+                      Gluten-free</label
+                    >
+                  </div>
+                  <h4 class="m-3">
+                    WOULD YOU LIKE EXTRA REGULAR PIZZA TOPPINGS?
+                  </h4>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Feta cheese"
+                      id="Feta cheese"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Feta cheese
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Mushroom"
+                      id="Mushroom"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Mushroom
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Bacon"
+                      id="Bacon"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Bacon
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Pineapple"
+                      id="Pineapple"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Pineapple
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Onions"
+                      id="Onions"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Onions
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="Red pepper"
+                      id="Red pepper"
+                    />
+                    <label class="form-check-label pl-5" for="crust1">
+                      Red pepper
+                    </label>
+                  </div>
+                  <div
+                    class="btn-toolbar justify-content-between m-3"
+                    role="toolbar"
+                    aria-label="Toolbar with button groups"
+                  >
+                    <div
+                      class="btn-group m-3"
+                      role="group"
+                      aria-label="First group"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onClick
+                        id="delivery"
+                      >
+                        Delivery
+                      </button>
+                    </div>
+                    <div
+                      class="btn-group m-3"
+                      role="group"
+                      aria-label="First group"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        onClick
+                        id="pickUp"
+                      >
+                        PickUp
+                      </button>
+                    </div>
+                  </div>
+                  <div class="destination m-3">
+                    <label>Where to?</label>
+                    <input
+                      type="text"
+                      name="destination"
+                      placeholder="Nairobi"
+                    />
+                  </div>
+                </form>
               </div>
               <div class="modal-footer">
                 <button
@@ -187,11 +262,14 @@
         </div>
       </div>
 
-      <footer>
-        <h4>Pizza Plaza</h4>
-        <p>2021</p>
-      </footer>
+      <div class="col-md-3">
+        <h2>Checkout</h2>
+      </div>
     </div>
+    <footer>
+      <h4>Pizza Plaza</h4>
+      <p>2021</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
