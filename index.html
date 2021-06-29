@@ -58,7 +58,8 @@
             <!-- Modal content-->
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title mr-5">BBQ Steak</h4>
+                <div id="modalTitle" class="h3"></div>
+                <input type="hidden" id="productName" name="productName"></input>
                 <button type="button" class="close" data-dismiss="modal">
                   &times;
                 </button>
@@ -66,143 +67,240 @@
               <div class="modal-body">
                 <form>
                   <h4 class="m-3">CHOOSE ONE OF THE OPTIONS BELOW</h4>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaSize"
+                          value="small"
+                          id="size1"
+                        />
+                        <label class="form-check-label pl-5" for="size1">
+                          Small
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 610</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaSize"
+                          value="medium"
+                          id="size2"
+                        />
+                        <label class="form-check-label pl-5" for="size2">
+                          Medium
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 915</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaSize"
+                          id="size3"
+                          value="large"
+                        />
+                        <label class="form-check-label pl-5" for="size3">
+                          Large
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 1155</p>
+                    </div>
+                  </div>
 
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaSize"
-                      id="size1"
-                    />
-                    <label class="form-check-label pl-5" for="size1">
-                      Small
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaSize"
-                      id="size2"
-                    />
-                    <label class="form-check-label pl-5" for="size2">
-                      Medium
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaSize"
-                      id="size3"
-                    />
-                    <label class="form-check-label pl-5" for="size3">
-                      Large
-                    </label>
-                  </div>
                   <h5 class="m-3">YOUR EXTRAS</h5>
                   <h4 class="m-3">WHAT KIND OF CRUST WOULD YOU LIKE?</h4>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaCrust"
-                      id="crust1"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Crispy
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaCrust"
+                          value="Crispy"
+                          id="crust1"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Crispy
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 350</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaCrust"
-                      id="crust2"
-                    />
-                    <label class="form-check-label pl-5" for="crust2">
-                      Stuffed
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaCrust"
+                          value="Stuffed"
+                          id="crust2"
+                        />
+                        <label class="form-check-label pl-5" for="crust2">
+                          Stuffed
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 150</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="pizzaCrust"
-                      id="crust3"
-                    />
-                    <label class="form-check-label pl-5" for="crust3">
-                      Gluten-free</label
-                    >
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="pizzaCrust"
+                          value="Gluten-free"
+                          id="crust3"
+                        />
+                        <label class="form-check-label pl-5" for="crust3">
+                          Gluten-free</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 250</p>
+                    </div>
                   </div>
+
                   <h4 class="m-3">
                     WOULD YOU LIKE EXTRA REGULAR PIZZA TOPPINGS?
                   </h4>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Feta cheese"
-                      id="Feta cheese"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Feta cheese
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Feta cheese"
+                          name="toppings"
+                          id="topping_1"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Feta cheese
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Mushroom"
-                      id="Mushroom"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Mushroom
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Mushroom"
+                          name="toppings"
+                          id="topping_2"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Mushroom
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Bacon"
-                      id="Bacon"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Bacon
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Bacon"
+                          name="toppings"
+                          id="topping_3"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Bacon
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Pineapple"
-                      id="Pineapple"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Pineapple
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Pineapple"
+                          name="toppings"
+                          id="topping_4"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Pineapple
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Onions"
-                      id="Onions"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Onions
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Onions"
+                          name="toppings"
+                          id="topping_5"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Onions
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      name="Red pepper"
-                      id="Red pepper"
-                    />
-                    <label class="form-check-label pl-5" for="crust1">
-                      Red pepper
-                    </label>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value="Red pepper"
+                          name="toppings"
+                          id="topping_6"
+                        />
+                        <label class="form-check-label pl-5" for="crust1">
+                          Red pepper
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <p>Ksh 100</p>
+                    </div>
                   </div>
                   <div
                     class="btn-toolbar justify-content-between m-3"
@@ -248,11 +346,9 @@
                   </div>
                 </form>
               </div>
-              <div class="modal-footer">
-                <img src="images/icons8-plus-50 (1).png" style="size: 20px" />
-                <input type="number" class="sm" />
-                <img src="images/icons8-minus-50.png" />
-                <button type="button" class="btn btn-default">
+              <div class="modal-footer">    
+                <input type="number" id="quantity" name="quantity" class="sm" />
+                          <button type="button" id="btn_AddToOrder" class="btn btn-default">
                   ADD TO ORDER
                 </button>
               </div>
@@ -261,8 +357,38 @@
         </div>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-3" id="checkout">
         <h2>Checkout</h2>
+        
+        <table class="table table-striped table-hover">
+          <tbody>
+            <tr>
+              <th scope="row">Product</th>
+              <td colspan="2" class="table-active" id="lblproductName"></td>
+            </tr>
+            <tr>
+              <th scope="row">Pizza Size</th>
+              <td colspan="2" class="table-active" id="pizzaSize"></td>
+              <td colspan="2" class="table-active" id="pizzaSizePrice"></td>
+            </tr>
+            <tr>
+              <th scope="row">Crust Type</th>
+              <td colspan="2" class="table-active" id="pizzaCrust"></td>
+              <td colspan="2" class="table-active" id="pizzaCrustPrice"></td>
+            </tr>
+            <tr>
+              <th scope="row">Pizza Toppings</th>
+              <td colspan="2" class="table-active" id="pizzaToppings"></td>
+              <td colspan="2" class="table-active" id="pizzaToppingsPrice"></td>
+            </tr>
+            <tr>
+              <th scope="row">Total</th>
+              <td colspan="2" class="table-active" id="pizzaPickup"></td>
+              <td colspan="2" class="table-active" id="pizzaPricePerQuantity"></td>
+            </tr>
+          </tbody>
+        </table>
+
       </div>
     </div>
     <footer>

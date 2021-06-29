@@ -1,19 +1,19 @@
 .pizza-images {
-    position: relative;
-    text-align: center;
-    color: black;
-    border-radius: .25rem 0 0 0;
-  }
-  .bottom-right-text {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    background-color:white;
-    padding-left: 10px!important;
-    padding-right: 10px!important;
-    border-radius: .25rem 0 0 0;
-    font-weight: 700!important;  
+  position: relative;
+  text-align: center;
+  color: black;
+  border-radius: 0.25rem 0 0 0;
 }
-.destination{
-    display: none;
+.bottom-right-text {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background-color: white;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-radius: 0.25rem 0 0 0;
+  font-weight: 700 !important;
+}
+.destination {
+  display: none;
 }
