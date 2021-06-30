@@ -330,7 +330,7 @@
                 <button
                   type="button"
                   id="btn_AddToOrder"
-                  class="btn btn-default"
+                  class="btn btn-outline-info"
                 >
                   ADD TO ORDER
                 </button>
@@ -340,134 +340,147 @@
         </div>
       </div>
 
-      <div class="col-md-3 destination mt-5 p-1 text-white" id="checkout">
-        <h2>Checkout</h2>
-
-        <table class="table table-striped table-hover">
-          <tbody>
-            <tr>
-              <th scope="row">Product</th>
-              <td colspan="2" class="table-active" id="lblproductName"></td>
-            </tr>
-            <tr>
-              <th scope="row">Pizza Size</th>
-              <td colspan="2" class="table-active" id="pizzaSize"></td>
-              <td colspan="2" class="table-active" id="pizzaSizePrice"></td>
-            </tr>
-            <tr>
-              <th scope="row">Crust Type</th>
-              <td colspan="2" class="table-active" id="pizzaCrust"></td>
-              <td colspan="2" class="table-active" id="pizzaCrustPrice"></td>
-            </tr>
-            <tr>
-              <th scope="row">Pizza Toppings</th>
-              <td colspan="2" class="table-active" id="pizzaToppings"></td>
-              <td colspan="2" class="table-active" id="pizzaToppingsPrice"></td>
-            </tr>
-            <tr>
-              <th scope="row">Total</th>
-              <td colspan="2" class="table-active" id="pizzaPickup"></td>
-              <td
-                colspan="2"
-                class="table-active"
-                id="pizzaPricePerQuantity"
-              ></td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="row">
-          <div class="col-md-6">
-            <div
-              class="btn-toolbar justify-content-between m-3"
-              role="toolbar"
-              aria-label="Toolbar with button groups"
-            >
-              <div class="btn-group m-3" role="group" aria-label="First group">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  onClick
-                  id="delivery"
+      <div class="col-md-3 destination mt-5" id="checkout">
+        <div class="card p-4">
+          <h2>Checkout</h2>
+          <table class="table table-striped table-hover">
+            <tbody>
+              <tr>
+                <th scope="row">Product</th>
+                <td colspan="2" class="table-active" id="lblproductName"></td>
+              </tr>
+              <tr>
+                <th scope="row">Pizza Size</th>
+                <td colspan="2" class="table-active" id="pizzaSize"></td>
+                <td colspan="2" class="table-active" id="pizzaSizePrice"></td>
+              </tr>
+              <tr>
+                <th scope="row">Crust Type</th>
+                <td colspan="2" class="table-active" id="pizzaCrust"></td>
+                <td colspan="2" class="table-active" id="pizzaCrustPrice"></td>
+              </tr>
+              <tr>
+                <th scope="row">Pizza Toppings</th>
+                <td colspan="2" class="table-active" id="pizzaToppings"></td>
+                <td
+                  colspan="2"
+                  class="table-active"
+                  id="pizzaToppingsPrice"
+                ></td>
+              </tr>
+              <tr>
+                <th scope="row">Total</th>
+                <td colspan="2" class="table-active" id="pizzaPickup"></td>
+                <td
+                  colspan="2"
+                  class="table-active"
+                  id="pizzaPricePerQuantity"
+                ></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                class="btn-toolbar justify-content-between m-3"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+              >
+                <div
+                  class="btn-group m-3"
+                  role="group"
+                  aria-label="First group"
                 >
-                  Delivery
-                </button>
+                  <button
+                    type="button"
+                    class="btn btn btn-outline-warning"
+                    onClick
+                    id="delivery"
+                  >
+                    Delivery
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div
-              class="btn-toolbar justify-content-between m-3"
-              role="toolbar"
-              aria-label="Toolbar with button groups"
-            >
-              <div class="btn-group m-3" role="group" aria-label="First group">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  onClick
-                  id="pickUp"
+            <div class="col-md-6">
+              <div
+                class="btn-toolbar justify-content-between m-3"
+                role="toolbar"
+                aria-label="Toolbar with button groups"
+              >
+                <div
+                  class="btn-group m-3"
+                  role="group"
+                  aria-label="First group"
                 >
-                  PickUp
-                </button>
+                  <button
+                    type="button"
+                    class="btn btn btn-outline-warning"
+                    onClick
+                    id="pickUp"
+                  >
+                    PickUp
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="deliveryDetails" class="m-5">
-            <div class="row">
-              <div class="col-md-12">
-                <input
-                  class="form-control m-2"
-                  type="text"
-                  placeholder="Name..."
-                  id="customerName"
-                />
+            <div id="deliveryDetails" class="m-5">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="form-control m-2"
+                    type="text"
+                    placeholder="Name..."
+                    id="customerName"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="form-control m-2"
+                    type="text"
+                    placeholder="Destination"
+                    id="locationDelivery"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Delivery Amount</h3>
+                </div>
+                <div class="col-md-6">
+                  <h3>100</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 m-5">
+                  <button
+                    type="button"
+                    class="btn btn-outline-success"
+                    onClick
+                    id="showAlert"
+                  >
+                    Complete Order
+                  </button>
+                </div>
+              </div>
+              <div id="alertSummaryDelivery" class="m-3">
+                <p class="text-center align-center text-success">
+                  <strong>
+                    Thank you for Shopping with us your order will be delivered
+                    to your location soon.
+                  </strong>
+                </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <input
-                  class="form-control m-2"
-                  type="text"
-                  placeholder="Destination"
-                  id="locationDelivery"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <h3>Delivery Amount</h3>
-              </div>
-              <div class="col-md-6">
-                <h3>100</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 m-5">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  onClick
-                  id="showAlert"
-                >
-                  Complete Order
-                </button>
-              </div>
-            </div>
-            <div id="alertSummaryDelivery" class="m-3">
-              <p class="text-center align-center">
+            <div id="alertSummaryPickup" class="m-3">
+              <p class="text-center align-center text-success">
                 <strong>
-                  Thank you for Shopping with us your order will be delivered to
-                  your location soon.
+                  Thank you for Shopping with us your order will be ready soon.
                 </strong>
               </p>
             </div>
-          </div>
-          <div id="alertSummaryPickup" class="m-3">
-            <p class="text-center align-center">
-              <strong>
-                Thank you for Shopping with us your order will be ready soon.
-              </strong>
-            </p>
           </div>
         </div>
       </div>
