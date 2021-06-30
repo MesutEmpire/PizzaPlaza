@@ -182,7 +182,8 @@ $("#btn_AddToOrder").click(function (e) {
     pizzaPlaza.totalPricePickUp();
   document.getElementById("pizzaPricePerQuantity").innerHTML =
     pizzaPlaza.pricePerQuantity();
-
+  document.getElementById("totalCostPickup").innerHTML =
+    pizzaPlaza.pricePerQuantity();
   console.log(productName);
   console.log(selectedPizzaSize);
   console.log(selectedPizzaSCrust);
