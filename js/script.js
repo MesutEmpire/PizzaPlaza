@@ -3,49 +3,49 @@ const products = [
     image: "images/BBQ_steak.png",
     duration: "100-110 min",
     name: "BBQ Steak",
-    price: "Min Ksh 570",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Chicken_bali.png",
     duration: "60-70min",
     name: "Chicken Bali",
-    price: "Min Ksh 620",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Chicken_supreme.png",
     duration: "90-100min",
     name: "Chicken Supreme",
-    price: "Min Ksh 500",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Chicken_Tikka.png",
     duration: "80-100min",
     name: "Chicken Tikka",
-    price: "Min Ksh 490",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Hawaiian.png",
     duration: "90-100min",
     name: "Hawaiian",
-    price: "Min Ksh 500",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Pepperoni_chicken.png",
     duration: "80-100min",
     name: "Pepperoni Passion",
-    price: "Min Ksh 490",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Periperi_chicken.png",
     duration: "80-100min",
     name: "Peri peri Chicken",
-    price: "Min Ksh 490",
+    price: "Min Ksh 610",
   },
   {
     image: "images/Veggie_extravaganza.png",
     duration: "80-100min",
     name: "Veggie Extravaganza",
-    price: "Min Ksh 490",
+    price: "Min Ksh 610",
   },
 ];
 
@@ -219,7 +219,7 @@ $("#delivery").click(function () {
 $("#pickUp").click(function () {
   $("#deliveryDetails").hide();
   $("#alertSummaryPickup").show();
-  console.log("Hi")
+  console.log("Hi");
 });
 
 $("#showAlert").click(function () {
