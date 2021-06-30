@@ -109,13 +109,13 @@ class PizzaPlaza {
     return toppingPrice;
   }
 
-  deliveryPrice() {
-    if (this.delivery == true) {
-      return 150;
-    } else {
-      return 0;
-    }
-  }
+  // deliveryPrice() {
+  //   if (this.delivery == true) {
+  //     return 150;
+  //   } else {
+  //     return 0;
+  //   }
+  // }
 
   totalPricePickUp() {
     let pizzaSizePrice = this.priceBySize();
@@ -132,7 +132,7 @@ class PizzaPlaza {
 
   totalPlusDelivery() {
     let withoutDelivery = this.pricePerQuantity();
-    let deliveryFee = this.deliveryPrice();
+    let deliveryFee = 350
 
     return withoutDelivery + deliveryFee;
   }
@@ -184,6 +184,8 @@ $("#btn_AddToOrder").click(function (e) {
     pizzaPlaza.pricePerQuantity();
   document.getElementById("totalCostPickup").innerHTML =
     pizzaPlaza.pricePerQuantity();
+    document.getElementById("deliveryAmount").innerHTML =
+    pizzaPlaza.totalPlusDelivery();
   console.log(productName);
   console.log(selectedPizzaSize);
   console.log(selectedPizzaSCrust);
