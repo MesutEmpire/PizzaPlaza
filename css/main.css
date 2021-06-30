@@ -20,6 +20,9 @@
 #deliveryDetails{
   display: none;
 }
-#alertSummary{
+#alertSummaryDelivery{
+  display: none;
+}
+#alertSummaryPickup{
   display: none;
 }

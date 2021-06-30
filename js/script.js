@@ -214,17 +214,14 @@ $("#btn_AddToOrder").click(function (e) {
   $("#myModal").modal("hide");
 });
 $("#delivery").click(function () {
-  $("#deliveryDetails").show()
-  
-})
+  $("#deliveryDetails").show();
+});
 $("#pickUp").click(function () {
   $("#deliveryDetails").hide();
-  
-})
+  $("#alertSummaryPickup").show();
+  console.log("Hi")
+});
 
 $("#showAlert").click(function () {
-  $("#alertSummary").show();
- 
-})
-
-
+  $("#alertSummaryDelivery").show();
+});
