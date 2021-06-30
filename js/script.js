@@ -70,24 +70,6 @@ for (let i = 0; i < products.length; i++) {
 
 document.getElementById("prod").innerHTML = items;
 
-// $("#delivery").click(function () {
-//   $(".destination").show();
-// });
-// $("#pickUp").click(function () {
-//   $(".destination").hide();
-// });
-// document.getElementById("modal-title").innerHTML =
-// "<p> BBQ Steak Sam</p>";
-
-// $('#changeRadio').click(function(){
-//   $("input:radio[id='blue']").prop("checked",true);
-// });
-
-// $('#colors input').change(function(){
-//  var selected_item = $(this).val()
-//  $('#output').html(selected_item);
-// });
-
 class PizzaPlaza {
   constructor(type, size, crust, toppings, quantity) {
     this.type = type;
@@ -172,7 +154,7 @@ $("#btn_AddToOrder").click(function (e) {
   var selectedPizzaSCrust = $('input[name="pizzaCrust"]:checked')
     .val()
     .toLowerCase();
-  //selectedToppings
+
   var toppingsArr = [];
   $('input[name="toppings"]:checked').each(function () {
     toppingsArr.push(this.value);
@@ -215,11 +197,11 @@ $("#btn_AddToOrder").click(function (e) {
 });
 $("#delivery").click(function () {
   $("#deliveryDetails").show();
+  $("#alertSummaryPickup").hide();
 });
 $("#pickUp").click(function () {
   $("#deliveryDetails").hide();
   $("#alertSummaryPickup").show();
-  console.log("Hi");
 });
 
 $("#showAlert").click(function () {
