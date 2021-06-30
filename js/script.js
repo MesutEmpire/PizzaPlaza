@@ -213,3 +213,18 @@ $("#btn_AddToOrder").click(function (e) {
   $("#checkout").show();
   $("#myModal").modal("hide");
 });
+$("#delivery").click(function () {
+  $("#deliveryDetails").show()
+  
+})
+$("#pickUp").click(function () {
+  $("#deliveryDetails").hide();
+  
+})
+
+$("#showAlert").click(function () {
+  $("#alertSummary").show();
+ 
+})
+
+

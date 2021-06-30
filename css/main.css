@@ -17,3 +17,9 @@
 .destination {
   display: none;
 }
+#deliveryDetails{
+  display: none;
+}
+#alertSummary{
+  display: none;
+}
